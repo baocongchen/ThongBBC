@@ -13,9 +13,10 @@
             <a href="index.html" id="logo">
             <h1>Thong Tran</h1>
             <h2>Developer</h2>
+            </a>
         </header>
         
-      </a>
+      
       <nav>
         <ul class="nav">
             <li><a href="index.html" class="selected">Portfolio</a></li>
@@ -36,15 +37,20 @@
 
             <div class="col-sm-8 blog-main">
 
-                <script id="blogs-tpl" type="text/x-handlebars-template">
-                    {{#each blog}}
-                    <div class="blog-post">
-                        <h2 class="blog-post-title"><a href="#">{{title}}</a></h2>
-                        <p class="blog-post-meta">At time by an author</p>
-                        <div>{{{content}}}</div>
+                <div class="col-sm-8 blog-main">
+                    <div class="main-container">
+                        <script id="blogs-tpl" type="text/x-handlebars-template">
+                            {{#each blog}}
+                            <div class="blog-post">
+                                <h2 class="blog-post-title"><a href="#">{{title}}</a></h2>
+                                <p class="blog-post-meta">At time by an author</p>
+                                <div>{{{content}}}</div>
+                            </div>
+                            {{/each}}
+                        </script>
                     </div>
-                    {{/each}}
-                </script>
+                </div>
+                
 
                 <nav>
                     <ul class="pager">
