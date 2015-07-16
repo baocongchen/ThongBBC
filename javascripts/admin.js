@@ -19,11 +19,13 @@ $(function() {
             var data = $(e.target).serializeArray(),
                 username = data[0].value,
                 password = data[1].value;
-     
+                console.log(username);
+                console.log(password);
             // Call Parse Login function with those variables
             Parse.User.logIn(username, password, {
                 // If the username and password matches
                 success: function(user) {
+                    console.log("success login");
                     var welcomeView = new WelcomeView({ model: user });
                     welcomeView.render();
                     $('.main-container').html(welcomeView.el);
