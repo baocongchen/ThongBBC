@@ -4,7 +4,7 @@ $(function() {
  
     // Replace this line with the one on your Quickstart Guide Page
     Parse.initialize("G8cXsz7Z2PCMYbyKMRubHvk6BAgEYci2oYNMSUmm", "ovq6mqOtamFGGldOIKJXQLHLisXb3Z1sm1QpHObU"); 
-
+    Parse.User.enableRevocableSession();
     var LoginView = Parse.View.extend({
         template: Handlebars.compile($('#login-tpl').html()),
         events: {
