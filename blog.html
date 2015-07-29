@@ -91,14 +91,23 @@
         <a href="#">Back to top</a>
       </p>
     </footer>
-
+    
+    <script id="blogs-tpl" type="text/x-handlebars-template">
+    {{#each blog}}
+    <div class="blog-post">
+      <h2 class="blog-post-title"><a href="#">{{title}}</a></h2>
+      <p class="blog-post-meta">At {{time}} by {{authorName}}</p>
+      <div>{{{content}}}</div>
+    </div>
+    {{/each}}
+    </script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
     <!-- Handlebars.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
     <script type="text/javascript" src="javascripts/blog.js"></script>
     <div id="link64_vdp_tabid" style="display:none;">1075</div>
-        
         
         
     </body>
